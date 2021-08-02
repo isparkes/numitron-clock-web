@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/*aaa*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 @font-face {
   font-family: "icomoon";
@@ -276,6 +278,7 @@ figure {
   -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
+
 .fh5co-nav ul li.active > a {
   color: #fff !important;
 }
@@ -680,21 +683,14 @@ figure {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.fh5co-contact-info ul li.address:before {
-  font-size: 30px;
-  content: "\e9d1";
+
+.underline {
+  text-decoration: underline;
 }
-.fh5co-contact-info ul li.phone:before {
-  font-size: 23px;
-  content: "\e9f4";
-}
-.fh5co-contact-info ul li.email:before {
-  font-size: 23px;
-  content: "\e9da";
-}
-.fh5co-contact-info ul li.url:before {
-  font-size: 23px;
-  content: "\e9af";
+
+.fh5co-contact-info ul li .underline {
+  margin-bottom: 10px;
+  margin-left: 10px
 }
 
 .proj-bottom {
@@ -1705,6 +1701,57 @@ figure {
 
 .offcanvas {
   background-color: #2c2f33;
+}
+
+.dim {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dim::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.offcanvas-body ul li a {
+  padding: 0;
+}
+
+header h1 {
+  font-size: 50px;
 }
 
 @keyframes fadein {
