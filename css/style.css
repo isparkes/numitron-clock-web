@@ -690,7 +690,7 @@ figure {
 
 .fh5co-contact-info ul li .underline {
   margin-bottom: 10px;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .proj-bottom {
@@ -1750,6 +1750,57 @@ figure {
   padding: 0;
 }
 
+.content {
+  padding: 40px;
+}
+
+.specs {
+  background-color: #23272a;
+}
+
+.spec {
+  color: #ea9215;
+  font-size: 25px;
+}
+
+.spec-title {
+  font-size: 40px;
+}
+
+/* ul.list {
+  display: flex;
+}
+
+ul.list > li {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  flex: 1;
+} */
+
+.img-fluid {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.img-fluid {
+  padding: 0;
+}
+
+.supported::after {
+  content: "✓";
+  color: rgb(60, 255, 0);
+}
+
+.not-supported::after {
+  content: "✗";
+  color: red;
+}
+
 header h1 {
   font-size: 50px;
 }
@@ -1762,5 +1813,22 @@ header h1 {
     opacity: 1;
   }
 }
+
+/* @media screen and (max-width: 768px) {
+  ul.list {
+    display: flex;
+  }
+
+  ul.list li {
+    flex: 1;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  }
+} */
 
 /*# sourceMappingURL=style.css.map */
